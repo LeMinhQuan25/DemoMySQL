@@ -1,12 +1,13 @@
-<?php include 'connect.php';
+<?php 
+include 'connect.php';
 $lop_hoc = mysqli_query($conn,"SELECT * FROM lop_hoc");
 ?>
 <div class="panel panel-primary">
-      <div class="panel-heading">
-            <h3 class="panel-title">Danh sách lớp học</h3>
-      </div>
-      <table class="table table-bordered table-hover">
+      <table border="2" class="table table-bordered table-hover">        
           <thead>
+              <tr>
+                  <th colspan="3">Danh sách lớp học</th>
+              </tr>
               <tr>
                   <th>ID</th>
                   <th>Tên lóp</th>
@@ -14,7 +15,8 @@ $lop_hoc = mysqli_query($conn,"SELECT * FROM lop_hoc");
               </tr>
           </thead>
           <tbody>
-          <?php foreach($lop_hoc as $lop) : ?>
+        <!-- duyệt dữ liệu sử dụng vòng lặp foreach -->
+        <?php foreach($lop_hoc as $lop) : ?>
               <tr>
                   <td><?php echo $lop['id'];?></td>
                   <td><?php echo $lop['name'];?></td>
@@ -24,3 +26,4 @@ $lop_hoc = mysqli_query($conn,"SELECT * FROM lop_hoc");
           </tbody>
       </table>
 </div>
+
