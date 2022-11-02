@@ -11,9 +11,5 @@
     {
         echo "Kết nối thất bại!".mysqli_connect_error();
     }
-    // $conn = mysqli_connect(hostname:"127.0.0.1", username:"root", password:"abc12345678");
-    // if(!$conn){
-    //     die("Loi".mysqli_connect_error());
-    // }
-    // mysqli_query($conn,'demo_db2');
 ?>
+
