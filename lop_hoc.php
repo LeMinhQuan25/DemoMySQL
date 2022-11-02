@@ -1,4 +1,4 @@
-<?php include 'header.php';
+<?php include 'connect.php';
 $lop_hoc = mysqli_query($conn,"SELECT * FROM lop_hoc");
 ?>
 <div class="panel panel-primary">
