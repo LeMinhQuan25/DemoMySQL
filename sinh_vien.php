@@ -33,5 +33,6 @@ $sinhvien = mysqli_query($conn,$sql);
             <?php endforeach;?>
           </tbody>
       </table>
+      <h1>helo</h1>
 </div>
 

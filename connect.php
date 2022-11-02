@@ -12,3 +12,4 @@
         echo "Kết nối thất bại!".mysqli_connect_error();
     }
 ?>
+
